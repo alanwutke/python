@@ -14,7 +14,7 @@ print(num2.isdecimal())
 num1 = input('Digite um Número: ')
 num2 = input('Digite outro Número: ')
 
-#try = tenta executar o bloco, se ocorrer erro ele pula para o except
+#try = tenta executar o bloco, se ocorrer erro ele pula para o except ..
 try:
     num1 = float(num1)
     num2 = float(num2)
