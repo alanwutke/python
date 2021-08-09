@@ -6,6 +6,6 @@ else:
     print('B')
 
 if valor:
-    ... # ... ou elpsis também passa a linha sem interpretar, isso pode ser utilizado para lançar codigos posteriores.
+    ... # ... ou elpsis também passa a linha sem interpretar, isso pode ser utilizado para lançar codigos posteriores-.
 else:
     print('C')

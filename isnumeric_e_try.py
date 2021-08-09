@@ -3,7 +3,7 @@ num1 = input('Digite um Número: ')
 num2 = input('Digite outro Número: ')
 
 # isnumeric, isdigit, isdecimal - estas funções retornam se o valor da variável é um numero
-
+#
 print()
 print(num1.isnumeric())
 print(num2.isdecimal())

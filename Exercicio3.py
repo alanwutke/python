@@ -15,7 +15,7 @@ if num1.isnumeric():
 else:
     print('Digite apenas números inteiros')
 print()
-print('-----------------')
+print('------------------')
 print()
 """
 Faça um programa que pergunte a hora ao usuário e, baseando-se no horário descrito, exiba a saudação apropriada. Ex Bom dia 0-11, Boa tarde 12-17 e Boa Noite 18-23
