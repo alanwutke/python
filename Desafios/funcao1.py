@@ -16,36 +16,46 @@ soma(2, 2, 0)
 # Retorne o valor do primeiro número somado do aumento do percentual do mesmo
 
 def numeros(n1, n2):
-    calculo = ((n2/100) * n1)+ n1
-    return calculo
+    return ((n2/100) * n1)+ n1
 
 valor = numeros(3256,15.5)
 
 print(valor)
 
-# Se o parametro da função for divisível por 2, retorne fizz
+# Se o parametro da função for divisível por 3, retorne fizz
 # Se o parametro da função for divisivel por 5, retorn buzz
 # Se o parametro da função for divisivel por 5 e por 3, retorne FizzBuzz
 # Caso contrário, retorno o número enviado
 
+# Alan fez:
 
 def numero(n1):
-    if n1 % 2 == 0:
-        resultado = 'Fizz'
-        return resultado
+    if n1 % 5 == 0 and n1 % 3 == 0:
+        return 'FizzBuzz'
     elif n1 % 5 == 0:
-        resultado = 'Buzz'
-        return resultado
-    elif n1 % 5 == 0 and n1 % 3 == 0:
-        resultado = 'FizzBuzz'
-        return resultado
+        return 'Buzz'
+    elif n1 % 3 == 0:
+        return 'Fizz'
     else:
-        resultado = n1
-        return resultado
+        return n1
 
+print(numero(15))
 
+# Orientação professor:
 
-n1 = numero(2577)
+def numero(n1):
+    if n1 % 5 == 0 and n1 % 3 == 0:
+        return f'{n1} é divisível por 5 e 3.'
+    if n1 % 5 == 0:
+        return f'{n1} é divisível por 5.'
+    if n1 % 3 == 0:
+        return f'{n1} é divisível por 3.'
+    return f'{n1} não é divisível.' 
 
-print(n1)
+#gerando números aleatórios para teste:
 
+from random import randint
+
+for i in range(100):
+    aleatorio = randint(0,100)
+    print(numero(aleatorio))
